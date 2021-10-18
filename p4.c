@@ -5,28 +5,27 @@
 char tab[6][7];
 
 void init(void){
-  for(int l=0; l<NBL; l++)
+    for(int l=0; l<NBL; l++)
     {
-      for(int c=0; c<NBC; c++)
-	{
-	  tab[l][c] = '.' ;
-	}
+        for(int c=0; c<NBC; c++)
+        {
+            tab[l][c] = '.' ;
+        }
     }
 }
 
 void affiche(void){
-  for(int l=0; l<NBL; l++)
+    for(int l=0; l<NBL; l++)
     {
-      for(int c=0; c<NBC; c++)
-	{
-	  printf("%c ",tab[l][c]);
-	}
-      printf("\n");
+        for(int c=0; c<NBC; c++)
+        {
+            printf("%c",tab[l][c]);
+        }
     }
 }
 int main(void){
-  init();
-  affiche();
+    init();
+    affiche();
 
-  return 0;
+    return 0;
 }
